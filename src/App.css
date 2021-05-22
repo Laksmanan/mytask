@@ -1,0 +1,320 @@
+.App {
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.leftrail {
+  height: 100vh;
+  background-color: #333;
+}
+
+.no-side {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.no-side1 {
+  /* padding-left: 5px !important; */
+  padding-right: 2px !important;
+}
+
+.horizontal-line {
+  height: 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 5px 10px 40px #eee;
+}
+
+.empty-space {
+  height: 100px;
+}
+
+.task-header {
+  padding: 7px 0px 7px 7px !important;
+  background-color: #f9f9fa;
+  border: 1px solid #eee;
+}
+
+.plus-icon {
+  float: right;
+  font-size: larger;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #eee;
+  cursor: pointer;
+}
+
+.task-open {
+  background-color: #edf7fc;
+  font-family: sans-serif;
+}
+
+.task-content {
+  margin-left: -7px;
+  margin-bottom: 10px !important;
+}
+
+.cust-input {
+  border-radius: 0px !important;
+  border: solid 1px #eee !important;
+  height: 25px !important;
+  font-size: 12px !important;
+  font-family: sans-serif !important;
+  width: 104% !important;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) !important;
+  margin-top: 5px;
+
+}
+
+.cust-inputDate {
+  padding-left: 20px !important;
+  outline: 0 !important;
+}
+
+.marginTop {
+  margin-top: 10px;
+}
+
+.cust-dropdown {
+  width: 250px !important;
+  height: 25px !important;
+  text-align: left !important;
+  border-radius: 0px !important;
+  border: solid 1px #eee !important;
+}
+
+.cust-dropdown .caret {
+  float: right !important;
+  border-top: 0px !important;
+  object-fit: contain;
+}
+
+.cust-dropdown span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#deleteIcon {
+ margin-top: 20px;
+ cursor: pointer;
+}
+
+.cancelBtn {
+  display: inline-block !important;
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: black;
+}
+
+.saveBtn {
+  float: right;
+  display: inline-block !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  background-color: #47bb7f;
+  border: 1px solid #47bb7f;
+  color: white;
+  padding: 5px 15px 5px 17px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.saveBtn:hover {
+  color: white;
+}
+
+.saveBtn:hover {
+  color: black;
+}
+
+.dropdown {
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+  text-align: left !important;
+  border-radius: 0px !important;
+  border: solid 1px #eee !important;
+  outline: 0;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) !important;
+}
+
+.dropdown:focus-visible
+.dropdown:active{
+  border: solid 1px #eee !important;
+}
+
+.dropdown option{
+  width: 100%;
+  outline: 0;   
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(./images/arrow.png);
+  background-repeat: no-repeat;
+  background-position-x: -36%;
+  background-position-y: 5px;
+  padding-left: 10px
+  /* background: transparent; */
+}
+
+.calendarImg {
+  margin-top: 9px;
+  margin-left: 5px;
+  z-index: 1;
+  width: 14px;
+  position: absolute;
+}
+
+.react-datepicker__day-names {
+  font-weight: 600;
+}
+
+.react-datepicker__header {
+  background-color: transparent !important;
+  border-bottom: 1px solid #eee !important;
+  border-top-left-radius: 0.3rem;
+}
+
+#clockImg {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#iconClock{
+  background-image:url(./images/clock.svg); 
+  background-repeat: no-repeat; 
+  background-position: 5px 3px;
+  padding-left: 25px;
+}
+
+.w3-dropdown-content {
+  text-decoration: none;
+  height: 224px;
+  cursor: auto;
+  color: #000;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  min-width: 69px !important;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+
+.w3-button:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+a:focus, a:hover {
+    text-decoration: none !important;
+}
+
+.w3-dropdown-hover:first-child, .w3-dropdown-click:hover {
+  background-color: transparent !important;
+}
+
+.timeBtn {
+  width: 108%;
+  height: 25px;
+  height: 25px;
+  padding-left: 27px;
+  border: solid 1px #eee !important;
+  outline: 0;
+  background-color: white;
+  margin-top: 5px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) !important;
+}
+
+#profileBox {
+  border-radius: 5px;
+  height: 42px;
+  background-color: #eb8348;
+}
+
+#notifyIcon {
+  margin-left: 44px;
+}
+
+#descript {
+  padding-left: 11px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#descrptCol {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#pen {
+  height: 27px;
+  margin-right: 10px;
+  padding: 5px;
+  width: 25px;
+  border: solid 2px #eee !important;
+  cursor: pointer;
+}
+
+
+#tick {
+  width: 29px;
+  border: solid 2px #eee !important;
+  cursor: pointer;
+}
+
+#notify {
+  width: 27px;
+  padding: 5px;
+  border: 1px !important;
+  border-bottom: solid 2px #eee !important;
+  border-left: solid 2px #eee !important;
+  border-top: solid 2px #eee !important;
+  cursor: pointer;
+}
+
+
