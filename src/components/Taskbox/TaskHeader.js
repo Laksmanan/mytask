@@ -18,7 +18,7 @@ class TaskHeader extends React.Component {
             date: "",
             taskId: "",
             taskData: {
-                message: "Follow up",
+                message: "",
                 selectedDate: "",
                 selectedTime: "",
                 assignedUser: "",
@@ -29,7 +29,7 @@ class TaskHeader extends React.Component {
     openTaskHandler = () => {
         const task = this.state.taskbox
         const taskData = {...this.state.taskData}
-        taskData.message = "Follow up"
+        taskData.message = ""
         taskData.selectedDate = ""
         taskData.selectedTime = ""
         taskData.assignedUser = ""

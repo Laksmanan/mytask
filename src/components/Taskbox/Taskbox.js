@@ -3,8 +3,6 @@ import { Grid, Row, Col } from 'react-bootstrap'
 
 import TaskHeader from './TaskHeader'
 
-import sample from "../../images/sample.png";
-
 class Taskbox extends React.Component {
     constructor(props) {
         super(props);
@@ -37,7 +35,6 @@ class Taskbox extends React.Component {
                 <Col lg={2} md={2} xs={2} sm={2}></Col>
                 
                 <Col lg={4} md={4} xs={4} sm={4} className="no-side">
-                    <img src={sample} alt="sample" />
                 </Col>
             </div>
         )
