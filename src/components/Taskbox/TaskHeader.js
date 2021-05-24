@@ -105,9 +105,12 @@ class TaskHeader extends React.Component {
     }
 
     deleteHandler = async() => {
-        const result = await this.props.loadDeleteTask(this.state.taskId, this.props.userData.token.token)
-        if(result.code === 204){
-            window.location.reload();
+        let deleteConfirm = window.confirm("Are you sure you want to delete this Task?");
+        if(deleteConfirm) {
+            const result = await this.props.loadDeleteTask(this.state.taskId, this.props.userData.token.token)
+            if(result.code === 204){
+                window.location.reload();
+            }
         }
     }
 
